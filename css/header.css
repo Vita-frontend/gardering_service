@@ -1,0 +1,20 @@
+.header__title {
+     font-family: "Fira Sans Condensed", sans-serif;
+     font-size: 120px;
+     font-weight: 700;
+}
+.header__title-accent {
+    color: var(--accent-color);
+}
+.header__subtitle {
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 400;
+}
+.header__menu-link {
+font-size: 15px;
+font-weight: 600;
+text-decoration: none;
+
+}
+
