@@ -1,0 +1,58 @@
+.services {
+    background-image: url(../img/services-background.jpg);
+    background-position: 75% 40%;
+    padding: 20px;
+}
+.services__title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 20px;
+}
+.services__cards-list {
+    display: grid;
+    gap: 25px;
+}
+.services__card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+.services__card {
+    background-color: var(--text-botton-color);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    border: 1px solid #f4efef;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.services__card-title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 700;
+    font-size: 1.375rem;
+}
+.services__card__image img {
+    height: auto;
+    object-fit: cover;
+}
+
+@media (min-width: 480px) {
+    .services__cards-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .services__cards-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

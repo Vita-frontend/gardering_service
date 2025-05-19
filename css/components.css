@@ -8,15 +8,70 @@
     font-weight: 700;
     padding: 16px 32px;
     margin: 10px;
+    max-width: max-content;
 }
+
 .button:hover {
     background-color: var(--accent-color);
 }
+
 .button-accent {
     background-color: var(--text-botton-color);
     border: 2px solid var(--accent-color);
     color: var(--main-text-color);
 }
+
 .button-accent:hover {
-color: var(--text-botton-color);
+    color: var(--text-botton-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-accent-learn-more {
+    background-color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+
+}
+
+.button-accent-learn-more:hover {
+    background-color: var(--text-botton-active-color);
+    border: 2px solid var(--text-botton-active-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-card {
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "Fira Sans Condensed", sans-serif;
+}
+.button-card:hover {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+.social-logo svg {
+    width: 30px;
+    height: 30px;
+}
+
+.social-logo {
+    fill: var(--text-botton-color);
+}
+
+.social-logo .fill-logo {
+    fill: var(--text-botton-active-color);
+}
+
+.social-logo .fill-logo:hover {
+    fill: var(--text-botton-color);
+}
+
+.social-logo:hover {
+    fill: var(--text-botton-active-color);
+}
+
+.border-social-logo {
+    fill: none;
+    stroke: var(--text-botton-active-color);
+    stroke-width: 0.8;
 }

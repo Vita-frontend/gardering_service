@@ -8,11 +8,9 @@
 .header__hero {
     background-image: url(../img/background_header.png);
     background-size: cover;
-    background-position: 30% 50%;
-    min-height: 500px;    
+    background-position: 30% 80%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 .header__title {

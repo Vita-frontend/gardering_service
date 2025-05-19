@@ -21,7 +21,7 @@
     --text-botton-active-color: rgb(255, 138, 41);
 }
 
-.img {
+img {
     width: 100%;
     display: block;
 }
@@ -29,4 +29,28 @@
 .container {
     max-width: 1200px;
     margin: auto;
+}
+
+.line {
+    width: 70px;
+    height: 15px;
+    margin: 0 auto;
+}
+
+.text {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 1.05rem;
+    text-align: center;
+}
+
+.title {
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
 }

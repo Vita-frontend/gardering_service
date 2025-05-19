@@ -1,0 +1,55 @@
+.about-garden {
+    background-image: url(../img/about-garden-background.png);
+    background-position: 70% 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.about-garden__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-garden__social {
+    display: flex;
+    gap: 10px;
+}
+
+.about-garden__social .social-text {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+ 
+
+
+
+.about-garden__info .title-accent {
+    color: var(--accent-color);
+
+}
+
+
+
+.about-garden__image {
+    background-color: var(--text-botton-color);
+    padding: 10px;
+    border: 1px solid #f4efef;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+}
+.about-garden__image img {
+    height: auto;
+    object-fit: cover;
+}
+
+
+@media (min-width: 768px) {
+    .about-garden {
+        flex-direction: row;
+    }
+}
