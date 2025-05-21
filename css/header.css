@@ -19,9 +19,7 @@
     font-weight: 700;
 }
 
-.header__title-accent {
-    color: var(--accent-color);
-}
+
 
 .header__subtitle {
     color: var(--text-color);

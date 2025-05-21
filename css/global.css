@@ -33,10 +33,13 @@ img {
 
 .line {
     width: 70px;
-    height: 15px;
+    height: 14px;
     margin: 0 auto;
 }
 
+.title-accent {
+    color: var(--accent-color);
+}
 .text {
     color: var(--text-color);
     font-weight: 400;
@@ -54,3 +57,4 @@ img {
 html {
     scroll-behavior: smooth;
 }
+

@@ -12,7 +12,12 @@
     flex-direction: column;
     gap: 20px;
 }
-
+.about-garden__info .title {
+    text-align: start;
+}
+.about-garden__info .text {
+    text-align: start;
+}
 .about-garden__social {
     display: flex;
     gap: 10px;
