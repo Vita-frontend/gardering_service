@@ -2,7 +2,8 @@
 @import "components.css";
 @import "header.css";
 @import "about-garden.css";
-@import "services.partial.css";
-@import "need-services.partial.css";
-@import "our-works.partial.css";
-@import "our-team-previous.partial.css";
+@import "services.css";
+@import "need-services.css";
+@import "our-works.css";
+@import "our-team-previous.css";
+@import "our-team.css";

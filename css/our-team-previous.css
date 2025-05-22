@@ -1,5 +1,13 @@
 .our-team-previous {
-    padding: 20px;
+    background-image: url(../img/our-team-previous-background.jpg);
+    background-size: cover;
+    background-position: 50% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 20px;
 }
 
 .our-team-previous__info {
