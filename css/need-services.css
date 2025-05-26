@@ -1,25 +1,24 @@
 .need-services {
-    background-image: url(../img/need-services__background.png);
-    background-position: 20% 50%;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    gap: 30px;
-    align-items: center;
-    
+  background-image: url(../img/need-services__background.png);
+  background-position: 20% 50%;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 30px;
+  align-items: center;
 }
 
 .need-services__title {
-    text-align: center;
-    color: var(--text-botton-color);
-    font-size: 2.5rem;
-    font-weight: 700;
-    font-family: "Fira Sans Condensed", sans-serif;
+  text-align: center;
+  color: var(--text-botton-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Fira Sans Condensed", sans-serif;
 }
 
 .need-services__text {
-    color: var(--text-botton-color);
-    font-size: 1.125rem;
-    font-weight: 400;
+  color: var(--text-botton-color);
+  font-size: 1.125rem;
+  font-weight: 400;
 }

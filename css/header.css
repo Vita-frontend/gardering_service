@@ -1,58 +1,66 @@
+.header__navbar-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .header__nav {
-    background-color: var(--main-text-color); 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  background-color: var(--main-text-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .header__hero {
-    background-image: url(../img/background_header.png);
-    background-size: cover;
-    background-position: 30% 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  background-image: url(../img/background_header.png);
+  background-size: cover;
+  background-position: 40% 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 150px 20px 60px 20px;
 }
 .header__title {
-    font-family: "Fira Sans Condensed", sans-serif;
-    font-size: 3.875rem;
-    font-weight: 700;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 3.875rem;
+  font-weight: 700;
+}
+.header__title-accent {
+  color: var(--accent-color);
 }
 
-
-
 .header__subtitle {
-    color: var(--text-color);
-    font-size: 1.125rem;
-    font-weight: 400;
-    margin: 35px 0;
+  color: var(--text-color);
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin: 35px 0;
 }
 
 .header__menu {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
 }
-
 
 .header__menu .menu-link {
-    font-size: 15px;
-    font-weight: 600;
-    text-decoration: none;
-    color: var(--text-botton-color);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text-botton-color);
 }
 .header__menu .menu-link:hover {
-    color: var(--text-botton-active-color);
+  color: var(--text-botton-active-color);
 }
 
 @media (min-width: 768px) {
-   
+  .header__hero {
+    padding: 100px 20px 40px 100px;
+  }
 }
 @media (min-width: 1024px) {
-    .header-contact {
-        display: none;
-    }
-    .header__menu {
-        flex-direction: row;
-    }
+  .header-contact {
+    display: none;
+  }
+  .header__menu {
+    flex-direction: row;
+  }
 }

@@ -1,104 +1,101 @@
 .our-team {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    background-image: url(../img/our-team-background.jpg);
-    padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-image: url(../img/our-team-background.jpg);
+  padding: 30px;
+  margin-top: 30px;
 }
 
 .our-team__title-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-
-
-
-
 .our-team__list .image {
-    aspect-ratio: 4 / 3;
-    height: auto;
-    object-fit: cover;
-    object-position: center 20%;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  object-fit: cover;
+  object-position: center 20%;
 }
 
 .our-team__list .title {
-    text-align: start;
-    font-size: 1.375rem;
-    font-weight: 700;
-    font-family: "Fira Sans Condensed", sans-serif;
+  text-align: start;
+  font-size: 1.375rem;
+  font-weight: 700;
+  font-family: "Fira Sans Condensed", sans-serif;
 }
 
 .our-team__list .subtitle {
-    font-weight: 400;
-    font-size: 0.875rem;
-    font-family: "Fira Sans Condensed", sans-serif;
-    color: var(--text-botton-active-color);
+  font-weight: 400;
+  font-size: 0.875rem;
+  font-family: "Fira Sans Condensed", sans-serif;
+  color: var(--text-botton-active-color);
 }
 
 .our-team__list .text {
-    text-align: start;
+  text-align: start;
 }
 
 .our-team__list .info {
-    align-items: center;
-    justify-content: center;
-    background-color: var(--text-botton-color);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--text-botton-color);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
 }
 
 .our-team__list {
-    display: grid;
-    gap: 30px;
+  display: grid;
+  gap: 30px;
 }
 
 .our-team__list .card {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .our-team__list .card-reverse {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 768px) {
-    .our-team__list .card {
-        flex-direction: row;
-    }
+  .our-team__list .card {
+    flex-direction: row;
+  }
 
-    .our-team__list .card-reverse {
-        flex-direction: row-reverse;
-    }
+  .our-team__list .card-reverse {
+    flex-direction: row-reverse;
+  }
 
-    .our-team__list .image {
-        width: 50%;
-        aspect-ratio: 4 / 4;
-    }
+  .our-team__list .image {
+    width: 50%;
+    aspect-ratio: 4 / 4;
+  }
 
-    .our-team__list .info {
-        width: 50%;
-    }
+  .our-team__list .info {
+    width: 50%;
+  }
 }
 
 @media (min-width: 1024px) {
-    .our-team__list {
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-    }
+  .our-team__list {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
 
-    .our-team__list .card-reverse {
-        flex-direction: row;
-    }
+  .our-team__list .card-reverse {
+    flex-direction: row;
+  }
 
-    .our-team__list .reverse {
-        display: flex;
-        flex-direction: row-reverse;
-    }
+  .our-team__list .reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }

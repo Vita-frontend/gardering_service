@@ -46,7 +46,12 @@ button.carousel-control-next {
 }
 button.carousel-control-prev:hover,
 button.carousel-control-next:hover {
-  background-color: rgba( 39, 163, 55,  0.5 ); /* Зміна кольору фону при наведенні */
+  background-color: rgba(
+    39,
+    163,
+    55,
+    0.5
+  ); /* Зміна кольору фону при наведенні */
 }
 
 .carousel-indicators [data-bs-target] {
@@ -67,9 +72,9 @@ button.carousel-control-next:hover {
 }
 
 @media (min-width: 768px) {
-.gallery {
-  padding: 60px;
-}
+  .gallery {
+    padding: 60px;
+  }
 
   button.carousel-control-prev,
   button.carousel-control-next {
@@ -79,12 +84,12 @@ button.carousel-control-next:hover {
   .custom-prev-icon,
   .custom-next-icon {
     font-size: 2rem;
-  }button.carousel-control-prev {
-  left: -50px; /* Вилазить наполовину зліва */
-}
+  }
+  button.carousel-control-prev {
+    left: -50px; /* Вилазить наполовину зліва */
+  }
 
-button.carousel-control-next {
-  right: -50px; /* Вилазить наполовину справа */
-}
-  
+  button.carousel-control-next {
+    right: -50px; /* Вилазить наполовину справа */
+  }
 }
