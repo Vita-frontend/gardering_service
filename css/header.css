@@ -1,6 +1,6 @@
 
 .header__nav {
-    background-color: var(--main-text-color);
+    background-color: var(--main-text-color); 
     display: flex;
     justify-content: space-around;
     align-items: center;

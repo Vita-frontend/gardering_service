@@ -1,0 +1,90 @@
+.gallery {
+  padding: 20px;
+}
+.gallery__title-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+.gallery__title {
+  font-weight: 700;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 2.5rem;
+}
+.carousel-inner img {
+  object-fit: cover;
+}
+
+.custom-prev-icon,
+.custom-next-icon {
+  font-size: 1rem; /* Змінити розмір іконок */
+  color: #edeff1; /* Колір іконок */
+}
+
+button.carousel-control-prev,
+button.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.5); /* Напівпрозорий фон кнопки */
+  border-radius: 50%; /* Зробити кнопки круглими */
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%; /* Центр по висоті */
+  bottom: auto;
+  transform: translateY(-50%); /* Зсунути вгору на половину власної висоти */
+  position: absolute;
+}
+button.carousel-control-prev {
+  left: -12px; /* Вилазить наполовину зліва */
+}
+
+button.carousel-control-next {
+  right: -12px; /* Вилазить наполовину справа */
+}
+button.carousel-control-prev:hover,
+button.carousel-control-next:hover {
+  background-color: rgba( 39, 163, 55,  0.5 ); /* Зміна кольору фону при наведенні */
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: var(--text-color); /* Колір точок */
+  opacity: 0.7;
+}
+
+.carousel-indicators .active {
+  background-color: var(--accent-color); /* Колір активної точки  */
+  opacity: 1;
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: -50px; /* Відступ вниз за межі картинки */
+  left: 40%;
+  transform: translateX(-50%);
+  width: auto;
+}
+
+@media (min-width: 768px) {
+.gallery {
+  padding: 60px;
+}
+
+  button.carousel-control-prev,
+  button.carousel-control-next {
+    width: 40px;
+    height: 40px;
+  }
+  .custom-prev-icon,
+  .custom-next-icon {
+    font-size: 2rem;
+  }button.carousel-control-prev {
+  left: -50px; /* Вилазить наполовину зліва */
+}
+
+button.carousel-control-next {
+  right: -50px; /* Вилазить наполовину справа */
+}
+  
+}
