@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 20px;
 }
 
 .header__nav {
@@ -34,7 +35,12 @@
   font-weight: 400;
   margin: 35px 0;
 }
-
+.header__logo {
+  width: 100px;
+}
+.header__menu-iteam {
+  color: white !important;
+}
 .header__menu {
   list-style-type: none;
   display: flex;
@@ -50,7 +56,23 @@
 .header__menu .menu-link:hover {
   color: var(--text-botton-active-color);
 }
-
+.header-contact {
+  display: none;
+  background-color: rgba(25, 135, 84, 1);
+  padding: 20px 40px;
+}
+.header-call-us {
+  color: var(--text-botton-color);
+}
+.header-call-us-link {
+  text-decoration: none;
+  color: var(--text-botton-color);
+}
+.header-social-link {
+  text-decoration: none;
+}
+.header-social-link:hover {
+}
 @media (min-width: 768px) {
   .header__hero {
     padding: 100px 20px 40px 100px;
@@ -58,9 +80,29 @@
 }
 @media (min-width: 1024px) {
   .header-contact {
-    display: none;
+    display: block;
+    display: flex;
+    justify-content: space-between;
   }
   .header__menu {
     flex-direction: row;
   }
+}
+
+
+.header-social-link svg {
+  width: 40px;   /* постійно збільшений розмір */
+  height: 40px;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+
+.header-social-link:hover {
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.header-social-link:hover svg path {
+  fill: rgb(25 135 84); /* зелена пташка при наведенні */
 }
