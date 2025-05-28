@@ -43,6 +43,33 @@
   height: auto;
   object-fit: cover;
 }
+
+.social-logo svg {
+    width: 30px;
+    height: 30px;
+}
+
+.social-logo {
+    fill: #fff;
+}
+
+.social-logo .fill-logo {
+    fill: #ff8a29;
+}
+
+.social-logo .fill-logo:hover {
+    fill: #fff;
+}
+
+.social-logo:hover {
+    fill: #ff8a29;
+}
+
+.border-social-logo {
+    stroke: #ff8a29;
+    stroke-width: 1;
+}
+
 @media (min-width: 768px) {
   .about-garden {
     flex-direction: row;

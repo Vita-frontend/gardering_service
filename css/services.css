@@ -32,8 +32,7 @@
   flex-direction: column;
   padding: 20px;
   align-items: center;
-  justify-content: space-around;
-  gap: 30px;
+  justify-content: space-between;
   border: 1px solid #f4efef;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;

@@ -54,29 +54,3 @@
     text-decoration: underline;
 }
 
-.social-logo svg {
-    width: 30px;
-    height: 30px;
-}
-
-.social-logo {
-    fill: var(--text-botton-color);
-}
-
-.social-logo .fill-logo {
-    fill: var(--text-botton-active-color);
-}
-
-.social-logo .fill-logo:hover {
-    fill: var(--text-botton-color);
-}
-
-.social-logo:hover {
-    fill: var(--text-botton-active-color);
-}
-
-.border-social-logo {
-    fill: none;
-    stroke: var(--text-botton-active-color);
-    stroke-width: 0.8;
-}
