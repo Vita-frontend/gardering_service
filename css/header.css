@@ -71,8 +71,7 @@
 .header-social-link {
   text-decoration: none;
 }
-.header-social-link:hover {
-}
+ 
 @media (min-width: 768px) {
   .header__hero {
     padding: 100px 20px 40px 100px;
@@ -80,6 +79,7 @@
 }
 @media (min-width: 1024px) {
   .header-contact {
+    align-items: center;
     display: block;
     display: flex;
     justify-content: space-between;
@@ -89,9 +89,8 @@
   }
 }
 
-
 .header-social-link svg {
-  width: 40px;   /* постійно збільшений розмір */
+  width: 40px; /* постійно збільшений розмір */
   height: 40px;
   transition: all 0.3s ease;
   border-radius: 50%;
@@ -105,4 +104,17 @@
 
 .header-social-link:hover svg path {
   fill: rgb(25 135 84); /* зелена пташка при наведенні */
+}
+.header-contact-burger {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (min-width:1024px) {
+  .header-contact-burger {
+    display: none;
+  }
+}
+.header-clock {
+  color: var(--text-botton-color);
 }
