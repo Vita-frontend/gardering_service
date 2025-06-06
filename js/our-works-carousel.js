@@ -22,12 +22,13 @@ function showSlides() {
     slideContainer.innerHTML += slides[thirdSlideIdx];
   }
 }
+
 }
 
 showSlides();
 
 function nextSlide() {
-  currentSlide = (currentSlide + 1) % slides.length;
+  currentSlide = (currentSlide + 1 + slides.length) % slides.length;
   showSlides();
 }
 function prevSlide() {
