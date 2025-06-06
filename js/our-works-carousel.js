@@ -14,11 +14,11 @@ let currentSlide = 0;
 function showSlides() {
   slideContainer.innerHTML = slides[currentSlide];
   if (window.innerWidth >= 768) {
-    const secondSlideIdx = currentSlide === slides.length - 1 ? 0 : currentSlide + 1;
+    const secondSlideIdx = (currentSlide + 1) % slides.length;
     slideContainer.innerHTML += slides[secondSlideIdx];
   
   if (window.innerWidth >= 1024) {
-    const thirdSlideIdx = secondSlideIdx === slides.length - 1 ? 0 : secondSlideIdx + 1;
+    const thirdSlideIdx = (secondSlideIdx + 1) % slides.length;
     slideContainer.innerHTML += slides[thirdSlideIdx];
   }
 }
@@ -27,11 +27,11 @@ function showSlides() {
 showSlides();
 
 function nextSlide() {
-  currentSlide = currentSlide === slides.length - 1 ? 0 : currentSlide + 1;
+  currentSlide = (currentSlide + 1) % slides.length;
   showSlides();
 }
 function prevSlide() {
-  currentSlide = currentSlide === 0 ? slides.length - 1 : currentSlide - 1;
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
   showSlides();
 }
 

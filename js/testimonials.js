@@ -20,7 +20,7 @@ function nextSlide() {
 }
 
 function startSlideShow() {
-    slideInterval = setInterval(nextSlide, 5000);
+    slideInterval = setInterval(nextSlide, 3000);
 }
 
 function stopSlideShow() {
@@ -28,7 +28,14 @@ function stopSlideShow() {
 }
 startSlideShow();
 
+let isRunning = true;
+
+if (slideContainer) {
 slideContainer.addEventListener('click', () => {
-    stopSlideShow(); // Зупиняємо автоматичний перехід
-    startSlideShow(); // Перезапускаємо інтервал
-});
+    if (isRunning) {
+        stopSlideShow(); // Зупиняємо автоперехід
+    } else {
+        startSlideShow(); // Запускаємо знову
+    }
+    isRunning = !isRunning;});
+}
