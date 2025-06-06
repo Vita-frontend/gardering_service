@@ -6,6 +6,7 @@ const slides = [
 const slideContainer = document.querySelector(".testimonials-slide");
 
 let currentSlide = 0;
+let slideInterval;
 
 function showSlides() {
     slideContainer.innerHTML = slides[currentSlide];
@@ -18,4 +19,16 @@ function nextSlide() {
   showSlides();
 }
 
-setInterval (nextSlide, 5000);
+function startSlideShow() {
+    slideInterval = setInterval(nextSlide, 5000);
+}
+
+function stopSlideShow() {
+    clearInterval(slideInterval);
+}
+startSlideShow();
+
+slideContainer.addEventListener('click', () => {
+    stopSlideShow(); // Зупиняємо автоматичний перехід
+    startSlideShow(); // Перезапускаємо інтервал
+});
