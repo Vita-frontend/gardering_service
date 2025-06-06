@@ -38,9 +38,8 @@
   border-radius: 8px;
 }
 .services__card-title {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+ text-align: center;
+ align-items: center;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
   font-size: 1.375rem;
