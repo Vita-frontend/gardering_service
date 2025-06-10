@@ -38,6 +38,9 @@
 .our-work__card-title-size {
   font-size: 1rem;
 }
+.our-works__caerousel-container {
+  padding: 0 10px;
+}
 .our-work__card-image {
   aspect-ratio: 4 / 3;
   height: auto;
@@ -79,15 +82,33 @@
   cursor: pointer;
 }
 .our-work__prev-button {
-  left: -40px;
+  left: -30px;
 }
 .our-work__next-button {
-  right: -40px;
+  right: -30px;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .our-work__button {
     font-size: 40px;
     padding: 60px 40px;
   }
+}
+@media (min-width: 1024px) {
+  .our-work__button {
+    font-size: 40px;
+  }
+  .our-works__caerousel-container {
+  padding: 40px 0;
+}
+.our-works__carousel-animation {
+  width: 60%;
+  margin: 0 auto;
+}
+.our-work__prev-button {
+  left: 150px;
+}
+.our-work__next-button {
+  right: 150px;
+}
 }
 
