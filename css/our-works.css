@@ -76,22 +76,28 @@
   transform: translateY(-50%);
   background: none;
   border: none;
-  font-size: 20px;
+  font-size: 30px;
   padding: 0 10px;
   color: var(--accent-color);
   cursor: pointer;
 }
 .our-work__prev-button {
-  left: -30px;
+  left: 5px;
 }
 .our-work__next-button {
-  right: -30px;
+  right: 5px;
 }
 @media (min-width: 768px) {
   .our-work__button {
     font-size: 40px;
     padding: 60px 40px;
   }
+  .our-work__prev-button {
+  left: -20px;
+}
+.our-work__next-button {
+  right: -20px;
+}
 }
 @media (min-width: 1024px) {
   .our-work__button {

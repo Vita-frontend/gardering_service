@@ -3,11 +3,12 @@
   background-image: url(../img/contact-background.png);
   display: flex;
   flex-direction: column;
-gap: 20px;
+  gap: 20px;
 }
 .contact-form__contacts {
   background-color: white;
   padding: 20px;
+  flex: 1 1 0;
 }
 
 .contact-form__contacts-info-box {
@@ -20,7 +21,8 @@ gap: 20px;
   font-size: 2.5rem;
   text-align: start;
 }
-.contact-form__contacts-info .info {
+.contact-form__contacts-info .adress {
+    text-decoration: none;
   font-size: 1rem;
   color: var(--text-color);
   font-family: "Open Sans", sans-serif;
@@ -53,6 +55,7 @@ gap: 20px;
 .contact-form__form {
   background-color: white;
   padding: 60px 20px;
+  flex: 1 1 0;
 }
 .contact-form__form .title {
   font-size: 1.75rem;
@@ -81,8 +84,10 @@ gap: 20px;
   font-weight: 700;
   padding: 10px 20px;
 }
- @media (min-width:768px) {
-    .contact-form {
-        flex-direction: row;
-    }
+
+@media (min-width: 768px) {
+ .contact-form {
+    flex-direction: row;
+    padding: 60px;
  }
+}
