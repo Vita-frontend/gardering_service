@@ -4,5 +4,6 @@ document.addEventListener("partialsLoaded", () => {
   import("./services.js");
   import("./services-carousel.js");
   import("./our-works-carousel.js");
+  import("./our-works-carousel-animated.js");
   import("./testimonials.js");
 });
