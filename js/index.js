@@ -6,4 +6,5 @@ document.addEventListener("partialsLoaded", () => {
   import("./our-works-carousel.js");
   import("./our-works-carousel-animated.js");
   import("./testimonials.js");
+  import("./contact-form-formspree.js");
 });
